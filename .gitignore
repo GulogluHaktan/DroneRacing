@@ -10,3 +10,10 @@ runs_host/
 __pycache__/
 handover.md
 .claude/
+
+# user allowed (2026-11-18): final v3 soup85 weights only (~11 MB, scanned: no secrets)
+!releases/v3_FAST_soup85_nov5/policy/soup85/model.pt
+!releases/v3_FAST_soup85_nov5/estimator/estimator.pt
+!releases/v3_FAST_soup85_nov5/calib/cal15_41.pt
+!releases/v3_FAST_soup85_nov5/gatenet/g17_gatenet.pt
+!releases/v3_FAST_soup85_nov5/gatenet/gatenet_g17_384.onnx

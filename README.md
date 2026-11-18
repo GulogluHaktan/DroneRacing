@@ -50,7 +50,7 @@ Success rate with different perception components removed or replaced by ground 
 ### Result 3: progress over model versions
 ![Result 3](plots/sonuc_3.png)
 
-*All figures are in `plots/`. Datasets and checkpoints are not in this repository.*
+*All figures are in `plots/`. Datasets and most checkpoints are not in this repository.*
 
 ## Installation
 
@@ -66,7 +66,7 @@ python scripts/check_install.py
 
 ## Usage
 
-Model weights are **not** in the repository (see `releases/*/MANIFEST.md` for the recipe and the exact files). With weights in place, evaluate a policy in Isaac:
+The final v3 soup85 weights are in `releases/v3_FAST_soup85_nov5/` (policy, estimator, calibration, GateNet g17); datasets and other checkpoints are not in the repository. Evaluate a policy in Isaac:
 
 ```bash
 scripts/run_isaaclab.sh isaac/eval_vision.py --policy runs/<policy> \

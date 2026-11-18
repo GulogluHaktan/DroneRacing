@@ -50,7 +50,7 @@ Algı bileşenleri çıkarıldığında veya gerçek değerle değiştirildiğin
 ### Sonuç 3: model sürümleri boyunca ilerleme
 ![Sonuç 3](plots/sonuc_3.png)
 
-*Tüm şekiller `plots/` klasöründe. Veri setleri ve checkpoint'ler bu repoda yoktur.*
+*Tüm şekiller `plots/` klasöründe. Veri setleri ve çoğu checkpoint bu repoda yoktur.*
 
 ## Kurulum
 
@@ -66,7 +66,7 @@ python scripts/check_install.py
 
 ## Kullanım
 
-Model ağırlıkları repoda **yoktur** (tarif ve dosya listesi için `releases/*/MANIFEST.md`). Ağırlıklar yerindeyse Isaac'te politika değerlendirme:
+Nihai v3 soup85 ağırlıkları `releases/v3_FAST_soup85_nov5/` içindedir (politika, tahmin edici, kalibrasyon, GateNet g17); veri setleri ve diğer checkpoint'ler repoda yoktur. Isaac'te politika değerlendirme:
 
 ```bash
 scripts/run_isaaclab.sh isaac/eval_vision.py --policy runs/<policy> \
