@@ -1,0 +1,236 @@
+{
+ "env": {
+  "n_envs": 4096,
+  "device": "cuda",
+  "dt": 0.005,
+  "decimation": 4,
+  "max_episode_s": 40.0,
+  "n_obs_gates": 2,
+  "n_obs_obstacles": 3,
+  "markers": false,
+  "landing": false,
+  "land_radius": 1.5,
+  "land_speed": 1.0,
+  "land_height": 0.35,
+  "gyro_noise": 0.02,
+  "gyro_bias": 0.01,
+  "accel_noise": 0.15,
+  "accel_bias": 0.05,
+  "policy_sees_params": false,
+  "map_obs": true,
+  "vis_obs": true,
+  "obs_history": 8,
+  "out_of_bounds": 160.0,
+  "cam_tilt": 0.75,
+  "mid_init_prob": 0.5,
+  "mid_init_dist": [
+   1.5,
+   6.0
+  ],
+  "mid_init_speed": [
+   0.0,
+   10.0
+  ],
+  "vehicle": {
+   "mass": [
+    0.8,
+    1.16
+   ],
+   "max_thrust": [
+    44.0,
+    72.0
+   ],
+   "twr_range": [
+    4.0,
+    8.0
+   ],
+   "arm": [
+    0.105,
+    0.145
+   ],
+   "drag_cd": [
+    0.35,
+    0.7
+   ],
+   "tau_rate": [
+    0.012,
+    0.03
+   ],
+   "tau_thrust": [
+    0.015,
+    0.04
+   ],
+   "max_rate": 14.0,
+   "yaw_rate_scale": 0.5,
+   "dr_scale": 1.0
+  },
+  "track": {
+   "min_gates": 8,
+   "max_gates": 12,
+   "seg_len": [
+    6.0,
+    15.0
+   ],
+   "turn_max": [
+    0.4,
+    1.3
+   ],
+   "max_climb": 0.5,
+   "z_range": [
+    1.45,
+    3.8
+   ],
+   "clearance": 5.0,
+   "gate_size": [
+    1.48,
+    1.52
+   ],
+   "gate_frame": 0.6,
+   "max_obstacles": 0,
+   "obs_radius": [
+    0.1,
+    0.25
+   ],
+   "obs_lateral": [
+    0.4,
+    2.0
+   ],
+   "obs_gate_clear": 1.5,
+   "obs_spacing": 2.5,
+   "obs_height": 3.5,
+   "start_dist": [
+    1.5,
+    3.0
+   ],
+   "n_retries": 8,
+   "turn_thresh": 0.35,
+   "climb_thresh": 0.6,
+   "fork_prob": 0.0,
+   "fork_offset": [
+    2.2,
+    3.5
+   ],
+   "land_dist": 4.0,
+   "split_prob": 0.15,
+   "split_gap": [
+    0.05,
+    0.3
+   ],
+   "split_lat": 0.35,
+   "split_yaw": 0.12,
+   "loop_prob": 0.0,
+   "loop_dz": [
+    4.4,
+    5.6
+   ],
+   "turnu_thresh": 2.6
+  },
+  "reward": {
+   "progress": 1.0,
+   "gate": 5.0,
+   "finish": 20.0,
+   "crash": 10.0,
+   "rate": 0.001,
+   "action_diff": 0.01,
+   "alive": 0.0,
+   "finish_time": 40.0,
+   "decoy": 10.0,
+   "land_slow": 0.05,
+   "perc": 0.02,
+   "center": 1.0,
+   "v_max": 0.0
+  },
+  "sensors": {
+   "scale": 1.0,
+   "vel_noise": 0.25,
+   "vel_bias": 0.35,
+   "vel_drift": 0.0,
+   "vel_drift_cap": 3.0,
+   "vel_noise_rel": 0.03,
+   "att_noise": 0.02,
+   "att_bias": 0.03,
+   "gyro_noise_obs": 0.05,
+   "gate_noise": 0.06,
+   "gate_noise_dist": 0.02,
+   "gate_err_corr": 0.93,
+   "gate_bias": 0.25,
+   "gate_yaw_bias": 0.09,
+   "obstacle_noise": 0.1,
+   "odo_tau": 3.0,
+   "odo_sigma": 0.7,
+   "yaw_noise": 0.25,
+   "odo_drift": 0.04,
+   "fov_h": 1.08,
+   "fov_v": 0.96,
+   "see_range": 18.0,
+   "gate_dropout": 0.02,
+   "gate_dropout_hold": 0.8,
+   "obs_delay": [
+    0,
+    3
+   ],
+   "act_delay": [
+    0,
+    4
+   ],
+   "gyro_scale_err": 0.01,
+   "accel_scale_err": 0.01,
+   "accel_sat_g": 16.0,
+   "gyro_sat": 34.9,
+   "vib_accel": 0.8,
+   "vib_gyro": 0.15,
+   "sat_glitch": 15.0,
+   "sag": 0.12,
+   "wind": 0.8,
+   "gust": 0.8,
+   "gust_tau": 0.5
+  }
+ },
+ "ppo": {
+  "n_steps": 32,
+  "epochs": 4,
+  "minibatches": 8,
+  "lr": 0.0003,
+  "gamma": 0.995,
+  "lam": 0.95,
+  "clip": 0.2,
+  "ent_coef": 0.001,
+  "vf_coef": 1.0,
+  "max_grad_norm": 1.0,
+  "desired_kl": 0.01,
+  "init_log_std": -0.7,
+  "hidden": [
+   256,
+   256,
+   128
+  ]
+ },
+ "args": {
+  "n_envs": 4096,
+  "iters": 2500,
+  "dr_scale": 1.0,
+  "hide_params": true,
+  "vis_obs": false,
+  "map_obs": true,
+  "no_obstacles": true,
+  "sensor_profile": "ekf",
+  "obs_history": 8,
+  "profile": "a2rl_long",
+  "sensor_scale": null,
+  "v_max": null,
+  "v_max_start": null,
+  "sensor_ramp": 100,
+  "markers": false,
+  "landing": false,
+  "fork_prob": 0.0,
+  "split_prob": 0.15,
+  "loop_prob": 0.0,
+  "finish_time": 40.0,
+  "ent_coef": 0.001,
+  "init": "runs/t8snap",
+  "gamma": 0.995,
+  "seed": 0,
+  "out": "runs/t10",
+  "log_every": 25
+ }
+}

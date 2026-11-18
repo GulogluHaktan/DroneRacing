@@ -1,0 +1,8 @@
+numpy
+torch
+matplotlib
+reportlab
+imageio
+pillow
+opencv-python
+# Isaac Sim / Isaac Lab (isaac/ folder) runs in docker via scripts/run_isaaclab.sh

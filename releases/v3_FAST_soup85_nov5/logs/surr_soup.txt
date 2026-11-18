@@ -1,0 +1,5 @@
+g37 |            ALL | n 2048 | success  94.0% | crash   6.0% | gates  96.2% | lap  21.1s | path-speed 15.7 m/s (p90 17.3) | peak 23.3 (p90 26.6, max 30.5) | action jitter 0.090/step
+soup50 |            ALL | n 2048 | success  90.1% | crash   9.9% | gates  93.9% | lap  19.0s | path-speed 17.4 m/s (p90 19.2) | peak 24.0 (p90 27.3, max 31.4) | action jitter 0.083/step
+soup70 |            ALL | n 2048 | success  87.0% | crash  13.0% | gates  91.7% | lap  17.8s | path-speed 18.5 m/s (p90 20.2) | peak 25.2 (p90 28.4, max 32.2) | action jitter 0.089/step
+soup85 |            ALL | n 2048 | success  86.5% | crash  13.5% | gates  91.9% | lap  17.2s | path-speed 19.1 m/s (p90 20.8) | peak 26.0 (p90 29.0, max 33.2) | action jitter 0.092/step
+g38d |            ALL | n 2048 | success  84.1% | crash  15.9% | gates  90.8% | lap  17.0s | path-speed 19.4 m/s (p90 21.1) | peak 26.7 (p90 29.7, max 34.2) | action jitter 0.097/step

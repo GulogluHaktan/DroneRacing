@@ -1,0 +1,5 @@
+           ALL | n 2048 | success  84.1% | crash  15.9% | gates  90.9% | lap  17.0s | path-speed 19.4 m/s (p90 21.0) | peak 26.7 (p90 29.6, max 33.8) | action jitter 0.096/step
+  crash causes: frame 99.4% (v 22.6), ground  0.6% (v 16.4)
+     TWR 3-4.5 | n   86 | success  72.1% | crash  27.9% | gates  85.0% | lap  19.1s | path-speed 17.2 m/s (p90 17.8) | peak 24.8 (p90 27.1, max 28.7) | action jitter 0.072/step
+     TWR 4.5-6 | n 1187 | success  84.5% | crash  15.5% | gates  91.3% | lap  17.5s | path-speed 18.8 m/s (p90 19.9) | peak 26.0 (p90 28.3, max 32.5) | action jitter 0.090/step
+     TWR 6-8.1 | n  775 | success  84.9% | crash  15.1% | gates  90.9% | lap  16.0s | path-speed 20.5 m/s (p90 21.6) | peak 28.0 (p90 30.8, max 33.8) | action jitter 0.109/step

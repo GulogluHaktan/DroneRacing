@@ -1,0 +1,11 @@
+frames 44900, with a partly visible gate 11999
+before: {'recall_1in': 0.581, 'recall_2in': 0.817, 'recall_3in': 0.818, 'recall_4in': 0.928, 'err_1in': 1.734, 'err_2in': 1.027, 'err_3in': 1.049, 'err_4in': 0.672, 'unmatched_peaks_per_frame': 0.525, 'gate_found_2c': 0.937}
+before, real-camera test: {'recall_1in': 0.429, 'recall_2in': 0.734, 'recall_3in': 0.8, 'recall_4in': 0.89, 'err_1in': 2.276, 'err_2in': 1.198, 'err_3in': 1.33, 'err_4in': 0.833, 'unmatched_peaks_per_frame': 0.763, 'gate_found_2c': 0.905}
+ep 1 |   332s | recall_1in 0.581 recall_2in 0.805 recall_3in 0.811 recall_4in 0.931 err_1in 1.779 err_2in 1.010 err_3in 1.035 err_4in 0.673 unmatched_peaks_per_frame 0.493 gate_found_2c 0.936
+   real-camera test | recall_1in 0.393 recall_2in 0.731 recall_3in 0.791 recall_4in 0.895 err_1in 2.080 err_2in 1.171 err_3in 1.264 err_4in 0.835 unmatched_peaks_per_frame 0.732 gate_found_2c 0.909
+ep 2 |   669s | recall_1in 0.548 recall_2in 0.814 recall_3in 0.822 recall_4in 0.933 err_1in 1.717 err_2in 1.032 err_3in 1.067 err_4in 0.672 unmatched_peaks_per_frame 0.498 gate_found_2c 0.937
+   real-camera test | recall_1in 0.429 recall_2in 0.743 recall_3in 0.809 recall_4in 0.899 err_1in 2.055 err_2in 1.196 err_3in 1.305 err_4in 0.825 unmatched_peaks_per_frame 0.748 gate_found_2c 0.910
+ep 3 |  1002s | recall_1in 0.548 recall_2in 0.829 recall_3in 0.829 recall_4in 0.933 err_1in 1.718 err_2in 1.001 err_3in 1.071 err_4in 0.663 unmatched_peaks_per_frame 0.509 gate_found_2c 0.939
+   real-camera test | recall_1in 0.429 recall_2in 0.746 recall_3in 0.813 recall_4in 0.901 err_1in 2.241 err_2in 1.134 err_3in 1.304 err_4in 0.828 unmatched_peaks_per_frame 0.721 gate_found_2c 0.914
+ep 4 |  1334s | recall_1in 0.548 recall_2in 0.829 recall_3in 0.829 recall_4in 0.934 err_1in 1.704 err_2in 1.009 err_3in 1.056 err_4in 0.661 unmatched_peaks_per_frame 0.477 gate_found_2c 0.941
+   real-camera test | recall_1in 0.429 recall_2in 0.746 recall_3in 0.804 recall_4in 0.900 err_1in 2.203 err_2in 1.172 err_3in 1.245 err_4in 0.822 unmatched_peaks_per_frame 0.721 gate_found_2c 0.912

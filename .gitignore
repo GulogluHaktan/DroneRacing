@@ -1,0 +1,12 @@
+# datasets, checkpoints and run outputs must never go to GitHub (user rule, 2026-10-22)
+runs/
+runs_host/
+*.pt
+*.pth
+*.npz
+*.onnx
+*.tgz
+*.mp4
+__pycache__/
+handover.md
+.claude/

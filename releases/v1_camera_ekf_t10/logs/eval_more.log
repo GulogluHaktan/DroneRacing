@@ -1,0 +1,13 @@
+== runs/t10 aided-EKF g3 seed 24
+VISION STACK ablate=none det=gatenet EKF | n   24 | success  75.0% | crash  25.0% | gates  86.0% | lap   8.2s | path-speed 11.4 m/s (p90 13.7) | action jitter 0.055/step
+estimator in closed loop: velocity err 0.95 m/s, attitude err 2.5 deg
+== runs/t10 aided-EKF g3 seed 25
+VISION STACK ablate=none det=gatenet EKF | n   24 | success  58.3% | crash  41.7% | gates  74.5% | lap   7.2s | path-speed 12.7 m/s (p90 14.3) | action jitter 0.084/step
+estimator in closed loop: velocity err 0.91 m/s, attitude err 2.8 deg
+== runs/t10 aided-EKF g3 seed 26
+VISION STACK ablate=none det=gatenet EKF | n   24 | success  50.0% | crash  50.0% | gates  71.3% | lap   7.5s | path-speed 11.5 m/s (p90 13.8) | action jitter 0.054/step
+estimator in closed loop: velocity err 1.28 m/s, attitude err 3.5 deg
+== runs/t10 aided-EKF g3 seed 27
+VISION STACK ablate=none det=gatenet EKF | n   24 | success  62.5% | crash  37.5% | gates  78.3% | lap   7.5s | path-speed 11.8 m/s (p90 13.7) | action jitter 0.102/step
+estimator in closed loop: velocity err 0.74 m/s, attitude err 2.4 deg
+DONE
